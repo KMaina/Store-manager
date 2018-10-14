@@ -1,0 +1,17 @@
+/* Main styles */
+body {
+    line-height: 1.5;
+}
+
+/* new_product.html */
+.back-arrow {
+    font-size: 1.2rem;
+    color: #674172;
+    text-decoration: none;
+}
+
+.back-arrow:hover {
+    font-size: 1.2rem;
+    color: #f9690e;
+    text-decoration: none;
+}
