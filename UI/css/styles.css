@@ -11,6 +11,21 @@ h3 {
     font-size: 1.5rem;
 }
 
+th {
+    font-weight: bold;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #674172;
+    padding: 10px;
+}
+
 /* Navigation Styles */
 ul {
     overflow: hidden;
@@ -47,4 +62,26 @@ li a:hover {
 .bio-info > p {
     flex-basis: 1;
     margin-right: 20px;
+}
+
+.products-display {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.submit{
+	width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #674172;
+	color: #fff;
+}
+
+.submit:hover{
+	border: 1px solid #674172;
+	background-color: #fff;
+	color: #674172;
 }
