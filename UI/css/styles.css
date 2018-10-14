@@ -1,0 +1,29 @@
+body {
+    line-height: 1.5;
+}
+
+/* Navigation Styles */
+ul {
+    overflow: hidden;
+    background-color: #674172;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #f9690e;
+}
+
+.active {
+    background-color: #f9690e;
+}
