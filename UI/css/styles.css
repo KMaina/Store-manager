@@ -3,6 +3,21 @@ body {
     line-height: 1.5;
 }
 
+th {
+    font-weight: bold;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #674172;
+    padding: 10px;
+}
+
 /* sales_record.html */
 .back-arrow {
     font-size: 1.2rem;
@@ -14,4 +29,11 @@ body {
     font-size: 1.2rem;
     color: #f9690e;
     text-decoration: none;
+}
+
+.products-display {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
