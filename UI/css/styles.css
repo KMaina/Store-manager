@@ -3,6 +3,25 @@ body {
     line-height: 1.5;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+th {
+    font-weight: bold;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #674172;
+    padding: 10px;
+}
+
 /* Navigation Styles */
 ul {
     overflow: hidden;
@@ -27,4 +46,48 @@ li a:hover {
 
 .active {
     background-color: #f9690e;
+}
+
+/* cart.html */
+.page-info {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.products-display {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.delete-button {
+    width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #cf000f;
+    color: #fff;
+}
+
+.delete-button:hover {
+    border: 1px solid #cf000f;
+	background-color: #fff;
+    color: #cf000f;
+}
+
+.approve-button {
+    width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #00e640;
+    color: #fff;
+}
+
+.approve-button:hover {
+    border: 1px solid #00e640;
+	background-color: #fff;
+    color: #00e640;
 }
