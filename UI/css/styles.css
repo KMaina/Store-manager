@@ -98,3 +98,29 @@ li a:hover {
     margin: 0 auto;
     margin-top: 20px;
 }
+   
+/* index.html styles */
+.main-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+.form-content {
+    border-radius: 5px;
+    background-color: #e2e2e2;
+    padding: 20px 40px;
+    width: 40vw;
+}
+
+.form-content h1, .form-content p {
+    padding-bottom: 20px;
+}
