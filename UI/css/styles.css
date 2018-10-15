@@ -3,6 +3,55 @@ body {
     line-height: 1.5;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+th {
+    font-weight: bold;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #674172;
+    padding: 10px;
+}
+
+/* Navigation Styles */
+ul {
+    overflow: hidden;
+    background-color: #674172;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #f9690e;
+}
+
+.active {
+    background-color: #f9690e;
+}
+
 /* new_product.html */
 .back-arrow {
     font-size: 1.2rem;
@@ -14,6 +63,38 @@ body {
     font-size: 1.2rem;
     color: #f9690e;
     text-decoration: none;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+.form-content {
+    border-radius: 5px;
+    background-color: #e2e2e2;
+    padding: 20px 40px;
+    width: 40vw;
+}
+
+.form-content h1, .form-content p {
+    padding-bottom: 20px;
+}
+
+.main-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+/* product-overview.html */
+.page-info {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .submit{
@@ -40,27 +121,84 @@ body {
     text-align: center;
 }
 
-.form-flex {
+.search-flex {
     display: flex;
-    flex-direction: column;
+}
+
+.search-text {
+    flex-grow: 3;
+    padding-right: 5px;
+}
+
+.search-submit {
+    flex-grow: 1;
+}
+
+.products-display {
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} 
-
-.form-content {
-    border-radius: 5px;
-    background-color: #e2e2e2;
-    padding: 20px 40px;
-    width: 40vw;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-.form-content h1, .form-content p {
-    padding-bottom: 20px;
-}
-
-.main-wrapper {
-    height: 100%;
+.add-button {
     width: 100%;
+    text-align: center;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #674172;
+    color: #fff;
+    margin: 20px 0px;
+}
+
+.add-button:hover {
+    width: 100%;
+    text-align: center;
+	padding: 13px 0px;
+	border: 1px solid #674172;
+	cursor: pointer;
+	background-color: #fff;
+    color: #fff;
+    margin: 20px 0px;
+}
+
+a > .add-button {
+    color: white;
+    text-decoration: none;
+}
+
+a > .add-button:hover {
+    color: #674172;
+    text-decoration: none;
+}
+
+.delete-button {
+    width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #cf000f;
+    color: #fff;
+}
+
+.delete-button:hover {
+    border: 1px solid #cf000f;
+	background-color: #fff;
+    color: #cf000f;
+}
+
+.approve-button {
+    width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #00e640;
+    color: #fff;
+}
+
+.approve-button:hover {
+    border: 1px solid #00e640;
+	background-color: #fff;
+    color: #00e640;
 }
