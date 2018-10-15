@@ -71,6 +71,10 @@ li a:hover {
     height: 100vh;
 } 
 
+.form-flex > p {
+    margin-bottom: 10px;
+}
+
 .form-content {
     border-radius: 5px;
     background-color: #e2e2e2;
