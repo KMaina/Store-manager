@@ -11,6 +11,10 @@ h3 {
     font-size: 1.5rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 th {
     font-weight: bold;
 }
@@ -24,19 +28,6 @@ table {
 td, th {
     border: 1px solid #674172;
     padding: 10px;
-}
-
-/* sales_record.html */
-.back-arrow {
-    font-size: 1.2rem;
-    color: #674172;
-    text-decoration: none;
-}
-
-.back-arrow:hover {
-    font-size: 1.2rem;
-    color: #f9690e;
-    text-decoration: none;
 }
 
 /* Navigation Styles */
@@ -65,16 +56,61 @@ li a:hover {
     background-color: #f9690e;
 }
 
-/* profile.html */
-.bio-info {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 20px;
+/* index.html styles */
+.main-wrapper {
+    height: 100%;
+    width: 100%;
 }
 
-.bio-info > p {
-    flex-basis: 1;
-    margin-right: 20px;
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+.form-content {
+    border-radius: 5px;
+    background-color: #e2e2e2;
+    padding: 20px 40px;
+    width: 40vw;
+}
+
+.form-content h1, .form-content p {
+    padding-bottom: 20px;
+}
+
+/* cart.html */
+.delete-button {
+    width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #cf000f;
+    color: #fff;
+}
+
+.delete-button:hover {
+    border: 1px solid #cf000f;
+	background-color: #fff;
+    color: #cf000f;
+}
+
+.approve-button {
+    width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #00e640;
+    color: #fff;
+}
+
+.approve-button:hover {
+    border: 1px solid #00e640;
+	background-color: #fff;
+    color: #00e640;
 }
 
 /* shop.html styles */
@@ -128,59 +164,59 @@ li a:hover {
     margin-top: 20px;
 }
 
-/* cart.html */
-.delete-button {
+/* profile.html */
+.bio-info {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.bio-info > p {
+    flex-basis: 1;
+    margin-right: 20px;
+}
+
+/* new_product.html */
+.back-arrow {
+    font-size: 1.2rem;
+    color: #674172;
+    text-decoration: none;
+}
+
+.back-arrow:hover {
+    font-size: 1.2rem;
+    color: #f9690e;
+    text-decoration: none;
+}
+
+.add-button {
     width: 100%;
-	padding: 13px 0px;
-	border: 1px solid #fff;
-	cursor: pointer;
-	background-color: #cf000f;
-    color: #fff;
-}
-
-.delete-button:hover {
-    border: 1px solid #cf000f;
-	background-color: #fff;
-    color: #cf000f;
-}
-
-.approve-button {
-    width: 100%;
-	padding: 13px 0px;
-	border: 1px solid #fff;
-	cursor: pointer;
-	background-color: #00e640;
-    color: #fff;
-}
-
-.approve-button:hover {
-    border: 1px solid #00e640;
-	background-color: #fff;
-    color: #00e640;
-}
-   
-/* index.html styles */
-.main-wrapper {
-    height: 100%;
-    width: 100%;
-}
-
-.form-flex {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} 
-
-.form-content {
-    border-radius: 5px;
-    background-color: #e2e2e2;
-    padding: 20px 40px;
-    width: 40vw;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #674172;
+    color: #fff;
+    margin: 20px 0px;
 }
 
-.form-content h1, .form-content p {
-    padding-bottom: 20px;
+.add-button:hover {
+    width: 100%;
+    text-align: center;
+	padding: 13px 0px;
+	border: 1px solid #674172;
+	cursor: pointer;
+	background-color: #fff;
+    color: #fff;
+    margin: 20px 0px;
+}
+
+a > .add-button {
+    color: white;
+    text-decoration: none;
+}
+
+a > .add-button:hover {
+    color: #674172;
+    text-decoration: none;
 }
