@@ -48,11 +48,48 @@ li a:hover {
     background-color: #f9690e;
 }
 
-/* cart.html */
+/* shop.html styles */
+.submit{
+	width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #674172;
+	color: #fff;
+}
+
+.submit:hover{
+	border: 1px solid #674172;
+	background-color: #fff;
+	color: #674172;
+}
+
+.form-text {
+    border: 1px solid #999;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 13px 0px;
+    text-align: center;
+}
+
 .page-info {
     width: 60%;
     margin: 0 auto;
     text-align: center;
+}
+
+.search-flex {
+    display: flex;
+}
+
+.search-text {
+    flex-grow: 3;
+    padding-right: 5px;
+}
+
+.search-submit {
+    flex-grow: 1;
 }
 
 .products-display {
@@ -62,6 +99,7 @@ li a:hover {
     margin-top: 20px;
 }
 
+/* cart.html */
 .delete-button {
     width: 100%;
 	padding: 13px 0px;
@@ -90,4 +128,30 @@ li a:hover {
     border: 1px solid #00e640;
 	background-color: #fff;
     color: #00e640;
+}
+   
+/* index.html styles */
+.main-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} 
+
+.form-content {
+    border-radius: 5px;
+    background-color: #e2e2e2;
+    padding: 20px 40px;
+    width: 40vw;
+}
+
+.form-content h1, .form-content p {
+    padding-bottom: 20px;
 }
