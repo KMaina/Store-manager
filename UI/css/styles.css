@@ -26,6 +26,19 @@ td, th {
     padding: 10px;
 }
 
+/* sales_record.html */
+.back-arrow {
+    font-size: 1.2rem;
+    color: #674172;
+    text-decoration: none;
+}
+
+.back-arrow:hover {
+    font-size: 1.2rem;
+    color: #f9690e;
+    text-decoration: none;
+}
+
 /* Navigation Styles */
 ul {
     overflow: hidden;
@@ -62,6 +75,7 @@ li a:hover {
 .bio-info > p {
     flex-basis: 1;
     margin-right: 20px;
+}
 
 /* shop.html styles */
 .submit{
