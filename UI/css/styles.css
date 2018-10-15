@@ -98,6 +98,37 @@ li a:hover {
     margin: 0 auto;
     margin-top: 20px;
 }
+
+/* cart.html */
+.delete-button {
+    width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #cf000f;
+    color: #fff;
+}
+
+.delete-button:hover {
+    border: 1px solid #cf000f;
+	background-color: #fff;
+    color: #cf000f;
+}
+
+.approve-button {
+    width: 100%;
+	padding: 13px 0px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	background-color: #00e640;
+    color: #fff;
+}
+
+.approve-button:hover {
+    border: 1px solid #00e640;
+	background-color: #fff;
+    color: #00e640;
+}
    
 /* index.html styles */
 .main-wrapper {
