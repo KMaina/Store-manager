@@ -7,6 +7,11 @@ h1 {
     font-size: 2.5rem;
 }
 
+
+h3 {
+    font-size: 1.5rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -50,6 +55,18 @@ li a:hover {
 
 .active {
     background-color: #f9690e;
+}
+
+/* profile.html */
+.bio-info {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.bio-info > p {
+    flex-basis: 1;
+    margin-right: 20px;
 }
 
 /* new_product.html */
