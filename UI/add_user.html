@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Add User</title>
 </head>
 <body>
@@ -26,14 +26,16 @@
             <p>Sign up below using a unique username and password</p>
             <div class="form-content">
                 <h1>User Sign Up</h1>
-                <form action="">
-                    <p><input type="text" placeholder='Username' class="form-text"></p>
-                    <p><input type="password" placeholder='Password' class="form-text"></p>
-                    <p><input type="password" placeholder='Confirm Password' class="form-text"></p>
+                <div id="user-error"></div>
+                <form id="registerUser">
+                    <p><input type="text" placeholder='Username' id='name' class="form-text"></p>
+                    <p><input type="password" placeholder='Password' id='password' class="form-text"></p>
+                    <p><input type="password" placeholder='Confirm Password' id='confirm' class="form-text"></p>
                     <p><input type="submit" value="Add User" class='submit'></p>
                 </form>
             </div>
         </div>
     </div>
+    <script src="../assets/js/register.js"></script>
 </body>
 </html>

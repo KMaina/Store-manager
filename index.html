@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="UI/css/reset.css">
-    <link rel="stylesheet" href="UI/css/styles.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Log In</title>
 </head>
 <body>
@@ -16,13 +16,15 @@
             <div class="form-content">
                 <h1>Log In</h1>
                 <p>Log in using your credentials</p>
-                <form action='UI/profile.html'>
-                    <p><input type="text" placeholder='Username' class="form-text"></p>
-                    <p><input type="password" placeholder='Password' class="form-text"></p>
+                <span id="user-error"></span>
+                <form id="LoginUser">
+                    <p><input type="text" placeholder='Username' id='name' class="form-text"></p>
+                    <p><input type="password" placeholder='Password' id='password' class="form-text"></p>
                     <p><input class='submit' type="submit" value="Log In"></p>
                 </form>
             </div>
         </div>
     </div>
+    <script src="assets/js/login.js"></script>
 </body>
 </html>
