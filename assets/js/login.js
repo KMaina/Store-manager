@@ -12,7 +12,6 @@ function LoginUser(e){
     e.preventDefault();
     let user_name = document.getElementById('name').value;
     let user_password = document.getElementById('password').value;
-    // let output = document.getElementById('output');
     fetch('https://ken-online-store.herokuapp.com/api/v2/auth/login', {
         method:'POST',
         headers: {

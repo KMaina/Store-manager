@@ -21,7 +21,6 @@ function registerUser(e){
     })
     .then((res) => res.json())
     .then((res) => {
-        // console.log(res)
         let msg = errorNotification(res);
         if(res.msg == "User Successfully Created"){
             document.getElementById('user-error').innerHTML = msg;
