@@ -4,66 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Sales Report</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Cart Checkout</title>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="logout.html">Logout</a></li>
-            <li><a href="cart.html">Cart</a></li>
+            <li><a class='active' href="cart.html">Cart</a></li>
             <li><a href="product-order.html">Shop</a></li>
             <li><a href="profile.html">Ken</a></li>
         </ul>
     </nav>
-    <div class='products-display'>
-        <h1>Detailed Sales Record</h1>
-        <h3>Sales ID: 1</h3>
-        <h3>Attendant: Ken</h3>
+    <!-- Checkout form -->
+    <div class="page-info">
+        <h1>Checkout the cart</h1>
+    </div>
+    <div class="products-display">
         <table>
             <tr>
-                <th>Product ID</th>
                 <th>Name</th>
                 <th>Quantity</th>
                 <th>Price</th>
+                <th>Delete</th>
             </tr>
             <tr>
-                <td>1</td>
                 <td>Bread</td>
                 <td>2</td>
                 <td>Ksh. 50</td>
+                <td><input type="submit" value="Delete" class='delete-button'></td>
             </tr>
             <tr>
-                <td>2</td>
                 <td>Milk</td>
-                <td>1</td>
+                <td>2</td>
                 <td>Ksh. 40</td>
+                <td><input type="submit" value="Delete" class='delete-button'></td>
             </tr>
             <tr>
-                <td>3</td>
                 <td>Soap</td>
-                <td>3</td>
+                <td>2</td>
                 <td>Ksh. 50</td>
+                <td><input type="submit" value="Delete" class='delete-button'></td>
             </tr>
             <tr>
-                <td>4</td>
                 <td>Sugar</td>
                 <td>2</td>
                 <td>Ksh. 50</td>
+                <td><input type="submit" value="Delete" class='delete-button'></td>
             </tr>
             <tr>
-                <td>5</td>
                 <td>Eggs</td>
                 <td>2</td>
                 <td>Ksh. 50</td>
+                <td><input type="submit" value="Delete" class='delete-button'></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Total</td>
+                <td>Ksh. 500</td>
+                <td></td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <td></td>
-                <td>Ksh. 500</td>
+                <td><input type="submit" value="Approve" class='approve-button'></td>
+                <td><input type="submit" value="Decline" class='delete-button'></td>
             </tr>
         </table>
     </div>

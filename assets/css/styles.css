@@ -224,3 +224,7 @@ a > .add-button:hover {
     color: #674172;
     text-decoration: none;
 }
+
+#user-error{
+    background-color: #cf000f;
+}
