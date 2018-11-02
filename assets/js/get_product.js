@@ -30,7 +30,7 @@ window.onload = function getProducts(e) {
                 '<td>'+product.product_name+'</td>'+
                 '<td>'+product.product_cost+'</td>'+
                 '<td>'+product.quantity+'</td>'+
-                '<td><input type="text" class="form-text" placeholder="Amount" id=""></td>'+
+                '<td><input type="text" class="form-text" placeholder="Amount" id="sale"></td>'+
                 '<td><input type="submit" class="submit" value="Add"></td>'+
                 '</tr>';
         })
