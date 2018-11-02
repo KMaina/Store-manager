@@ -1,9 +1,5 @@
-function errorNotification(res){
-    return `<p>${res.msg}</p>`;
-}
-
 function out(data){
-    let products = data.users;
+    let products = data.products;
     let products_table = document.getElementById('showProducts');
     th = `
     <tr>
