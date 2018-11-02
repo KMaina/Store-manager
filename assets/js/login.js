@@ -1,18 +1,11 @@
 document.getElementById('LoginUser').addEventListener('submit', LoginUser);
 
-function errorNotification(res){
-    return `<p>${res.msg}</p>`;
-}
-
-function setToken(res){
-    localStorage.setItem("token", res.access_token)
-}
-
 function LoginUser(e){
     e.preventDefault();
     let user_name = document.getElementById('name').value;
     let user_password = document.getElementById('password').value;
-    fetch('https://ken-online-store.herokuapp.com/api/v2/auth/login', {
+
+    fetch(url + 'auth/login', {
         method:'POST',
         headers: {
             'Accept': 'application/json',
@@ -20,20 +13,26 @@ function LoginUser(e){
         },
         body:JSON.stringify({name:user_name, password:user_password})
     })
-    .then((res) => res.json())
-    .then((res) => {
-        let msg = errorNotification(res);
-        if(res.msg == "User Successfully logged in"){
-            setToken(res);
-            window.location.href = 'pages/profile.html'
-        }
-        else{
-            document.getElementById('user-error').innerHTML = msg;
+    .then(res =>  res.json().then(data => ({status: res.status, body: data})))
+    .then((result) => {
+        let error = errorNotification(result);
+        let success = successNotification(result);
+        if(result.status == 200){
+            setToken(result);
+            document.getElementById('user-success').innerHTML = success;
             setTimeout(() => {
-                let msg = "";
-                document.getElementById('user-error').innerHTML = msg;
+                let success = "";
+                document.getElementById('user-success').innerHTML = success;
+                window.location.href = 'pages/profile.html'
             }, 5000)
         }
-    })                    
+        else{
+            document.getElementById('user-error').innerHTML = error;
+            setTimeout(() => {
+                let error = "";
+                document.getElementById('user-error').innerHTML = error;
+            }, 5000)
+        }
+    })              
 }
 
