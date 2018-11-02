@@ -1,8 +1,5 @@
 document.getElementById('addProduct').addEventListener('submit', addProduct)
 
-function errorNotification(res){
-    return `<p>${res.msg}</p>`;
-}
 
 function addProduct(e){
     e.preventDefault();
@@ -11,7 +8,7 @@ function addProduct(e){
     let product_reorder = document.getElementById('reorder').value;
     let product_price = document.getElementById('price').value;
 
-    fetch('https://ken-online-store.herokuapp.com/api/v2/products', {
+    fetch(url + 'products', {
         method:'POST',
         headers: {
             'Accept': 'application/json',
@@ -25,23 +22,21 @@ function addProduct(e){
     })
     .then(res =>  res.json().then(data => ({status: res.status, body: data})))
     .then((result) => {
-        if(result.status == 403){
-            window.location.href = 'profile.html'
-        }
-        console.log(result.status)
-        let msg = errorNotification(res);
-        if(res.status == 201){
-            document.getElementById('user-success').innerHTML = msg;
+        let error = errorNotification(result);
+        let success = successNotification(result);
+        if(result.status == 201){
+            document.getElementById('user-success').innerHTML = success;
             setTimeout(() => {
-                let msg = "";
-                document.getElementById('user-success').innerHTML = msg;
+                let success = "";
+                document.getElementById('user-success').innerHTML = success;
+                window.location.href = 'new_product.html'
             }, 5000)
         }
         else{
-            document.getElementById('user-error').innerHTML = msg;
+            document.getElementById('user-error').innerHTML = error;
             setTimeout(() => {
-                let msg = "";
-                document.getElementById('user-error').innerHTML = msg;
+                let error = "";
+                document.getElementById('user-error').innerHTML = error;
             }, 5000)
         }
     })
