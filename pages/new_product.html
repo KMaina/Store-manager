@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <title>New product</title>
 </head>
 <body>
@@ -24,15 +24,18 @@
                 <p>Add a new product by giving it a name, opening stock, reorder level and price then save.</p>
                 <div class="form-content">
                     <h1>Add New Product</h1>
-                    <form action="">
-                        <p><input type="text" placeholder='Name' class="form-text"></p>
-                        <p><input type="text" placeholder='Opening stock' class="form-text"></p>
-                        <p><input type="text" placeholder='Reorder Level' class="form-text"></p>
-                        <p><input type="text" placeholder='Price' class="form-text"></p>
+                    <div id="user-error"></div>
+                    <div id="user-success"></div>
+                    <form id="addProduct">
+                        <p><input type="text" placeholder='Name' id='name' class="form-text"></p>
+                        <p><input type="text" placeholder='Opening stock' id='amount' class="form-text"></p>
+                        <p><input type="text" placeholder='Reorder Level' id='reorder' class="form-text"></p>
+                        <p><input type="text" placeholder='Price' id='price' class="form-text"></p>
                         <p><input type="submit" value="Add Product" class='submit'></p>
                     </form>
                 </div>
             </div>
     </div>
+    <script src="../assets/js/add_product.js"></script>
 </body>
 </html>

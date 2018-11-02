@@ -224,3 +224,17 @@ a > .add-button:hover {
     color: #674172;
     text-decoration: none;
 }
+
+#user-error{
+    background-color: #cf000f;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#user-success{
+    background-color: #00e640;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
