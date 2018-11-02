@@ -5,13 +5,13 @@ An app to manage store operations
 clone the repo locally using the command `git clone https://github.com/KMaina/Store-manager.git`
 
 ## Usage
-cd into the Store-manager folder 
+- cd into the Store-manager folder 
 
-Open the index.html file in your browser 
+- Open the index.html file in your browser 
 
-cd into the UI folder
+- Log in using an admin
 
-Open any .html file in your browser
+- Perform functionality
 ## Meta
 Ken Maina – maina.ken0@gmail.com
 
